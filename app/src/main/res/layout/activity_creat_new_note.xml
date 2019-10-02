@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatNewNote"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlactionbar"
+        android:background="@drawable/bonhe">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvcreat"
+            android:text="CREAT NEW NOTE "
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvsave"
+            android:textColor="@android:color/white"
+            android:layout_toLeftOf="@id/img3dots"
+            android:text="Save"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/img3dots"
+            android:background="@drawable/a"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edttitle"
+        android:layout_below="@id/rlactionbar"
+        android:hint="Title"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:background="@drawable/bonhe_mong"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/edtdescription"
+        android:layout_below="@id/edttitle"
+        android:hint="Description"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:background="@drawable/bonhe_mong"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"
+        android:gravity="start"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvremind"
+        android:text="Remind me at :"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/edtdescription"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtimepicker"
+        android:layout_below="@id/tvremind"
+        android:background="@drawable/bonhe_mong"
+        android:textColor="@android:color/holo_purple"
+        android:text="14:20"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvdatepicker"
+        android:layout_below="@id/tvremind"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bonhe_mong"
+        android:textColor="@android:color/holo_purple"
+        android:text="04/05/2019"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtype"
+        android:text="Type:"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tvtimepicker"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spntype"
+        android:layout_below="@id/tvtimepicker"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/tvtype"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="200dp"
+        android:backgroundTint="@android:color/black"
+
+/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtag"
+        android:text="Tags:"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tvtype"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtags"
+        android:layout_toRightOf="@id/tvtag"
+        android:text="Family,Android,Friend"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tvtype"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvweek"
+        android:text="Weeks:"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tvtag"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvweeks"
+        android:layout_toRightOf="@id/tvweek"
+        android:text="Mon , Thu , Sat"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tvtag"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtune"
+        android:text="Tune"
+        android:layout_below="@id/tvweek"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/bonhe_mong"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
